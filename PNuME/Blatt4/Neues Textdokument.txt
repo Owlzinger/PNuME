@@ -1,3 +1,0 @@
-form here you can learn:
-1. de
-2. figure, type of the lines in your matlab function image, legend, label, title
