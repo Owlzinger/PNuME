@@ -7,20 +7,21 @@ exa = zeros(1,n);
 for t = 1:n
     exa(t) = exloesung(t0(t));
 end
-%% Vorwärts-Euler-Verfahren
+% Vorwärts-Euler-Verfahren
 fai1 = zeros(1,n);
 fai1 = forwardseuler(fai1,0,2,0.1);
-%% Rückwärts-Euler_verfahren
+% Rückwärts-Euler_verfahren
 fai2 = zeros(1,n);
 fai2 = backwardseuler(fai2,0,2,0.1);
- %% Trapezregel
- fai3 = zeros(1,n);
+% Trapezregel
+fai3 = zeros(1,n);
 fai3 = trapezrule(fai3,0,2,0.1);
-% plot(t0,exa,'k--',t0,fai1,'b',t0,fai2,'y',t0,fai3,'r');
+plot(t0,exa,'k--',t0,fai1,'b',t0,fai2,'y',t0,fai3,'r');
 
 
 %% Aufgabe 2
-% test OST [LHS,RHS] = OST(0.5, 0.2, [1.1], [1.4, 1.5], [1.7, 1.8], [2.0])
+% test OST 
+[LHS,RHS] = OST(0.5, 0.2, [1.1], [1.4, 1.5], [1.7, 1.8], [2.0])
 faiost_zero = zeros(1,n);
 for i = 2:n
     M = 1;
