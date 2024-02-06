@@ -55,9 +55,6 @@ title('Einschritt-θ-Verfahren mit timestep=0.1');
 xlabel('t');
 ylabel('Φ(t)');
 
-% test AB2 [LHS,RHS]=AB2(0.2, [1.1], [1.5, 1.6], [1.8, 1.9], [2.0, 2.1])
-% test AM3 [LHS,RHS]= AM3(0.2, [1.1], [1.4, 1.5, 1.6], [1.7, 1.8, 1.9], [2.0, 2.1])
-% test BDF2 [LHS,RHS]= BDF2(0.2, [1.1], [1.4], [1.7], [2.0, 2.1])
 %% Adams-Bashforth-Verfahren
 faiab = zeros(1,n);
 for i=2:n-1
