@@ -5,7 +5,7 @@ elseif (n == 2)
     gaussw = [1,1];
 elseif (n == 3)
     gaussw = [5/9, 8/9 , 5/9];
-else 
+else
     disp("no implementation")
 end
 end
